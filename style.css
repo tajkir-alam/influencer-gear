@@ -17,7 +17,7 @@ font-family: 'Manrope', sans-serif;
     margin: 50px auto;
 }
 .container{
-    max-width: 70%;
+    max-width: 75%;
     margin: 50px auto;
 }
 
@@ -100,10 +100,6 @@ header .header-title{
 }
 
 
-
-
-
-
 /* ------------
  Main Section
 ------------ */
@@ -117,7 +113,7 @@ header .header-title{
     padding: 30px 0px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    border-image: linear-gradient(90deg, rgba(132, 140, 150, 0.1) 1%, rgba(192, 204, 218, 0.726) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+    border-image: linear-gradient(90deg, rgba(132, 140, 150, 0.1) 0%, rgba(192, 204, 218, 0.726) 50.38%, rgba(192, 204, 218, 0.1) 100%);
     border-image-slice: 1;
     
 }
@@ -125,15 +121,69 @@ header .header-title{
 /* Products Section */
 .product-section{
     margin-top: 100px;
+    position: relative;
 }
 .product-section .product-section-title{
     font-size: 28px;
     font-weight: 600;
     color: #3A3A3A;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .product-section .product-content{
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+}
+.product-content .card{
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.card .card-img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.card .product-title{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+    margin-bottom: 5px;
+}
+.card .product-price{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+.card .review{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.review .review-icon i{
+    color: #FB8200;
+}
+.review .review-score{
+    font-size: 14px;
+    font-weight: 700;
+    color: #5E6366;
+}
+.card .product-details{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+}
+.product-section .btn-2{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    font-weight:700;
+    border: none;
+    margin-top: 30px;
+    color: rgba(224, 44, 109, 0.87);
+    background-color: transparent;
 }
