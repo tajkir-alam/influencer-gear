@@ -52,9 +52,6 @@ header .header-title{
 .banner-section{
     margin-top: 20px;
     padding: 50px 0px;
-    background-image: url(images/Circle-design.svg);
-    background-repeat: no-repeat;
-    background-position: right;
 }
 .banner-container{
     display: flex;
@@ -85,9 +82,27 @@ header .header-title{
 .banner-container .left-banner > h1, p, .btn-1{
     margin-bottom: 15px;
 }
-.banner-container .right-banner > img{
-    padding-right: 40px;
+.right-banner .relative-div{
+    position: relative;
+    max-width: 475px;
+    max-height: 475px;  
 }
+.relative-div .absolute-div{
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    max-width: 420px;
+    max-height: 400px;
+}
+.absolute-div .banner-camera-img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
 
 /* ------------
  Main Section
@@ -95,12 +110,29 @@ header .header-title{
 /* Company Section */
 .company-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding: 30px 0px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, rgba(132, 140, 150, 0.1) 1%, rgba(192, 204, 218, 0.726) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+    border-image-slice: 1;
+    
 }
 
 /* Products Section */
+.product-section{
+    margin-top: 100px;
+}
+.product-section .product-section-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
 .product-section .product-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
