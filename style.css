@@ -1,0 +1,107 @@
+/* -------------Fonts--------------
+font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------
+ Common Styles
+------------ */
+.container-fluid{
+    max-width: 80%;
+    margin: 50px auto;
+}
+.container{
+    max-width: 70%;
+    margin: 50px auto;
+}
+
+
+/* ------------
+ Header Section
+------------ */
+/* Menu Section */
+.menu-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+/* Banner Section */
+.banner-section{
+    margin-top: 20px;
+    padding: 50px 0px;
+    background-image: url(images/Circle-design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.banner-container{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-container .left-banner h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #3A3A3A;
+}
+.banner-container .left-banner p{
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.banner-container .left-banner .btn-1{
+    font-weight: 600;
+    padding: 10px 20px;
+    letter-spacing: 1.5px;
+    color: white;
+    background: #E02C6D;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.banner-container .left-banner > h1, p, .btn-1{
+    margin-bottom: 15px;
+}
+.banner-container .right-banner > img{
+    padding-right: 40px;
+}
+
+/* ------------
+ Main Section
+------------ */
+/* Company Section */
+.company-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Products Section */
+.product-section .product-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
