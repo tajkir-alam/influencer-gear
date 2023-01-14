@@ -187,3 +187,71 @@ header .header-title{
     color: rgba(224, 44, 109, 0.87);
     background-color: transparent;
 }
+
+/* Body Banner Section */
+.second-banner{
+    margin-top: 200px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+.second-banner .second-right-banner .second-banner-title{
+    font-size: 38px;
+    font-weight: 700;
+    color: #0A0826;
+}
+.second-banner .second-right-banner .second-banner-description{
+    font-weight: 700;
+    color: #6C6C6C;
+}
+.second-banner .second-right-banner .btn-3{
+    font-weight: 700;
+    border: 0;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+footer{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: #0A0826;
+}
+footer .footer-title{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+footer .footer-details{
+    font-size: 12px;
+    font-weight: 600;
+    color: #D9DBE1;
+    margin-bottom: 20px;
+}
+footer .social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+footer .social-icons .social-icon{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+footer .social-icons .social-icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
